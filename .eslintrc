@@ -11,6 +11,9 @@
       "react/prop-types": [
           "off"
       ],
+      "react/prefer-stateless-function": [
+          "warn"
+      ],
       "no-unused-expressions": 0
     }
 }
