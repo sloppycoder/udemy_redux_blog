@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router';
 
 import { fetchPosts } from '../actions';
 
-class PostsIndex extends React.Component {
+class PostsIndex extends Component {
   componentDidMount() {
     this.props.fetchPosts();
   }
