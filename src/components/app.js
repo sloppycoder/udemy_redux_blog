@@ -1,7 +1,7 @@
 import React from 'react';
 
-const App = () => (
-  <div>Hello Redux</div>
-);
-
-export default App;
+export default class App extends React.Component { // eslint-disable-line
+  render() {
+    return <div>{this.props.children}</div>;
+  }
+}
