@@ -5,11 +5,6 @@ import { Link } from 'react-router';
 import { fetchPosts } from '../actions';
 
 class PostsIndex extends Component {
-  constructor(props) {
-    super(props);
-    this.renderPosts = this.renderPosts.bind(this);
-  }
-
   componentDidMount() {
     this.props.fetchPosts();
   }
